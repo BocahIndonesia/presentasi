@@ -18,7 +18,7 @@
   <main>
     <header id="title">
       <section data-index="1" class="active">
-        <div class="background" style="--img: url('/assets/jpg/bg-1.jpg')"></div>
+        <div class="background" style="--img: url('assets/jpg/bg-1.jpg')"></div>
         <div class="overlay">
           <div>
             <h3>01</h3>
@@ -34,7 +34,7 @@
         </div>
       </section>
       <section data-index="2">
-        <div class="background" style="--img: url('/assets/jpg/bg-2.jpg')"></div>
+        <div class="background" style="--img: url('assets/jpg/bg-2.jpg')"></div>
         <div class="overlay">
           <div>
             <h3>02</h3>
@@ -54,7 +54,7 @@
         </div>
       </section>
       <section data-index="3">
-        <div class="background" style="--img: url('/assets/jpg/bg-3.jpg')"></div>
+        <div class="background" style="--img: url('assets/jpg/bg-3.jpg')"></div>
         <div class="overlay">
           <div>
             <h3>03</h3>
@@ -85,7 +85,7 @@
           </div>
         </div>
       </section>
-      <img src="/assets/png/robot.png"/>
+      <img src="assets/png/robot.png"/>
     </header>
   </main>
   <nav id="navigation">
@@ -138,7 +138,7 @@
         <h4>E/ Multicollinearity</h4>
       </header>
       <div class="content">
-        <img src="/assets/png/data/matrix-correlation.png"/>
+        <img src="assets/png/data/matrix-correlation.png"/>
         <p>Pada penelitian ini, pasangan variabel yang memiliki nilai Pearson's correlation coefficient lebih atau sama dengan <span class="yellow">0.9</span> dilabeli sebagai multicollinear.</p>
       </div>
       <footer>
@@ -150,7 +150,7 @@
         <h4>D/ 3 Variabel</h4>
       </header>
       <div class="content">
-        <img src="/assets/png/data/3vars.png"/>
+        <img src="assets/png/data/3vars.png"/>
         <p>Variabel <span class="blue">Bwd IAT Min</span>, <span class="blue">Pkt Len Min</span> dan <span class="blue">Fwd Pkts/s</span> menunjukkan potensi dalam mendukung model dalam proses klasifikasi data paket.</p>
       </div>
       <footer>
@@ -162,7 +162,7 @@
         <h4>E/ Identikal</h4>
       </header>
       <div class="content">
-        <img src="/assets/png/data/identikal.png"/>
+        <img src="assets/png/data/identikal.png"/>
         <p>Terdapat enam variabel yang memiliki pola distribusi yang serupa, yaitu <span class="blue">Fwd PSH Flags</span>, <span class="blue">FIN Flag Cnt</span>, <span class="blue">SYN Flag Cnt</span>, <span class="blue">RST Flag Cnt</span>, <span class="blue">URG Flag Cnt</span> dan <span class="blue">ECE Flag Cnt</span>.</p>
         <p>Perbandingan <span class="blue">Fwd PSH Flags</span> terhadap <span class="yellow">5</span> dari <span class="yellow">6</span> variabel tersebut memiliki kemiripan masing-masing lebih dari <span class="yellow">80%</span>.</p>
       </div>
@@ -175,7 +175,7 @@
         <h4>D/ Fwd PSH Flags</h4>
       </header>
       <div class="content">
-        <img src="/assets//png/data/fwd-psh-flags.png"/>
+        <img src="assets//png/data/fwd-psh-flags.png"/>
         <p>Variabel <span class="blue">Fwd PSH Flags</span> tidak memiliki nilai <span class="yellow">1</span> pada semua data yang dilabeli <span class="red">Brute-force</span>, dengan kata lain variabel ini dapat membantu model dalam melakukan klasifikasi.</p>
       </div>
       <footer>
@@ -187,7 +187,7 @@
         <h4>D/ Protocol</h4>
       </header>
       <div class="content">
-        <img src="/assets//png/data/protocol.png"/>
+        <img src="assets//png/data/protocol.png"/>
         <p>Paket dengan label <span class="red">Brute-force</span> dan <span class="red">DoS</span> hanya menggunakan protokol nomor <span class="yellow">6</span> (TCP). Oleh karena itu, seluruh paket dengan protokol nomor <span class="yellow">0</span> dan <span class="yellow">17</span> dikategorikan sebagai <span class="red">Benign</span>.</p>
       </div>
       <footer>
@@ -199,7 +199,7 @@
         <h4>D/ Port</h4>
       </header>
       <div class="content">
-        <img src="/assets/png/data/port.png"/>
+        <img src="assets/png/data/port.png"/>
         <p>data dengan label <span class="red">DoS</span> hanya memiliki nilai <span class="yellow">80</span> pada variabel <span class="blue">Dst Port</span>, sementara data dengan label <span class="red">Brute-force</span> hanya memiliki nilai <span class="yellow">21</span> atau <span class="yellow">22</span>.</p>
       </div>
       <footer>
