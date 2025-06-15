@@ -1,0 +1,29 @@
+@property --bgc-primary {
+  syntax: "<color>"; inherits: true;
+  initial-value: rgb(54, 54, 54);
+}
+
+@property --bgc-secondary {
+  syntax: "<color>"; inherits: true;
+  initial-value: rgb(24, 24, 24);
+}
+
+@property --red {
+  syntax: "<color>"; inherits: true;
+  initial-value: rgb(255, 37, 37);
+}
+
+@property --yellow {
+  syntax: "<color>"; inherits: true;
+  initial-value: rgb(252, 255, 81);
+}
+
+@property --green {
+  syntax: "<color>"; inherits: true;
+  initial-value: rgb(23, 255, 23);
+}
+
+@property --blue {
+  syntax: "<color>"; inherits: true;
+  initial-value: rgb(23, 124, 255);
+}

@@ -1,0 +1,180 @@
+#overlay {
+  display: none;
+  z-index: 99;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, .75);
+  justify-content: center; align-items: center;
+}
+
+    #overlay.active {
+      display: flex;
+    }
+
+span.red {
+  color: var(--red);
+}
+
+span.yellow {
+  color: var(--yellow);
+}
+
+span.blue {
+  color: var(--blue);
+}
+
+#overlay > article {
+  position: absolute;
+  background-color: var(--bgc-secondary);
+  padding: 10px;
+  border: 1px solid var(--green);
+  box-shadow: 0 0 5px #fff;
+  transform: scale(0);
+}
+
+    #overlay > article.active {
+      transform: scale(1);
+    }
+
+#overlay > article > header,
+#overlay > article > footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+#overlay > article > header {
+  margin-bottom: 20px;
+}
+#overlay > article > .content {
+  overflow-y: auto;
+}
+
+#overlay > article > header > h4 {
+  font-size: clamp(30px, 10vw, 45px);
+  color: var(--green)
+}
+
+#overlay > article > footer {
+  margin-top: 20px;
+  flex-direction: row-reverse;
+}
+
+#overlay > article > footer > span {
+  padding: 5px;
+  background-color: var(--red);
+  cursor: pointer;
+}
+
+/* 01 */
+#overlay > article[data-index="1a"] {
+  width: clamp(300px, 90vw, 700px)
+}
+
+#overlay > article[data-index="1a"] .content,
+#overlay > article[data-index="3a"] .content,
+#overlay > article[data-index="3b"] .content {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 5vh, 20px);
+}
+
+#overlay > article[data-index="1a"] .content > div > h5, 
+#overlay > article[data-index="3a"] .content > div > h5, 
+#overlay > article[data-index="3b"] .content > div > h5 {
+  font-size: clamp(10px, 7.5vw, 25px);
+}
+
+#overlay > article[data-index="1a"] .content > div > h5 > span, 
+#overlay > article[data-index="3a"] .content > div > h5 > span, 
+#overlay > article[data-index="3b"] .content > div > h5 > span {
+  font-family: "Wallpoet", sans-serif;
+  color: var(--green);
+  letter-spacing: 2px;
+}
+
+#overlay > article[data-index="1b"] {
+  width: clamp(300px, 90vw, 900px)
+}
+
+#overlay > article[data-index="1b"] .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; align-items: center;
+  gap: 10px;
+}
+
+#overlay > article[data-index="1b"] .content > div {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  justify-content: center; align-items: center;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+
+#overlay > article[data-index="1b"] .content > div::before {
+  content: attr(data-a);
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    135deg,
+    var(--bgc-primary) 50%, var(--bgc-secondary) 50%
+  );
+  font-family: "Wallpoet", sans-serif;
+  font-size: 25px;
+  color: var(--green);
+  transition: .5s;
+}
+
+#overlay > article[data-index="1b"] .content > div:hover::before {
+  transform: translateY(100%);
+}
+
+/* 02 */
+#overlay > article[data-index="2a"],
+#overlay > article[data-index="2b"],
+#overlay > article[data-index="2c"],
+#overlay > article[data-index="2d"],
+#overlay > article[data-index="2e"] {
+  width: clamp(300px, 90vw, 900px)
+}
+
+#overlay > article[data-index="2a"] header > h4 {
+  font-size: clamp(20px, 10vw, 30px);
+}
+
+
+#overlay > article[data-index="2a"] .content,
+#overlay > article[data-index="2b"] .content,
+#overlay > article[data-index="2c"] .content,
+#overlay > article[data-index="2d"] .content,
+#overlay > article[data-index="2e"] .content   {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+#overlay > article[data-index*="2"] .content > img {
+  width: 400px;
+}
+
+/* 03 */
+#overlay > article[data-index*="3"] {
+  width: clamp(300px, 90vw, 900px);
+}
+
+/* 04 */
+#overlay > article[data-index="4a"] {
+  width: clamp(300px, 90vw, 900px);
+}
+
+#overlay > article[data-index="4a"] .content > code {
+  color: var(--green);
+}
+#overlay > article[data-index="1b"] .content > p {
+  margin-top: 5px;
+}

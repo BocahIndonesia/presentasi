@@ -1,0 +1,51 @@
+#navigation {
+  --a: clamp(30px, 7.5vw, 60px);
+  
+  z-index: 99;
+  position: sticky;
+  left: 0; bottom: 5vh;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 5px;
+  padding-left: 10px;
+}
+
+#navigation,
+#navigation > span {
+  background-color: var(--green);
+  box-shadow: 0 0 5px #fff;
+}
+
+#navigation > span {
+  position: relative;
+  display: inline-flex;
+  justify-content: center; align-items: center;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+    #navigation > span.active {
+      scale: 0;
+    }
+
+#navigation > span::before {
+  content: attr(data-index);
+  position: absolute;
+  bottom: 100%;
+  font-size: 20px;
+  color: var(--green);
+  text-shadow: 0 0 5px #fff;
+}
+
+#navigation > span::after {
+  content: '';
+  width: 15px; height: 15px;
+  border-radius: 50%;
+  background-color: var(--bgc-secondary);
+}
+
+    #navigation > span.active::after {
+      background-color: #fff;
+    }

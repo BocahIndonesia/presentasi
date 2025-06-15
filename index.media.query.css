@@ -1,0 +1,6 @@
+@media (max-width: 767px) {
+  #bagian-header > section > .overlay > div:first-child {
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+}

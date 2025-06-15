@@ -1,0 +1,194 @@
+#title {
+  position: absolute;
+  width: 100vw; 
+    width: 100dvw;
+  height: 100vh;
+    height: 100dvh;
+  overflow: hidden;
+  /* transform: translateY(-100%); */
+}
+
+#title > img {
+  position: absolute;
+  height: min(90vh, 90vw);
+  bottom: 0;
+  z-index: 1;
+}
+
+#title > section {
+  position: absolute;
+  left: 100%; top: 0;
+  width: 100%; height: 100%;
+}
+    #title > section.active {
+      left: 0;
+    }
+
+#title > section > :is(.background, .overlay) {
+  position: absolute;
+  width: 100%; height: 100%;
+}
+
+#title > section > .overlay {
+  padding: 50px;
+  display: flex;
+  justify-content: center; align-items: center;
+  flex-wrap: wrap;
+}
+
+#title > section > .overlay > div {
+  position: relative;
+  flex-grow: 1;
+  width: clamp(500px, 50%, 600px);
+  height: min(50vh, 100%);
+  height: 50%;
+}
+
+#title > section > .overlay > div:first-child {
+  align-self: flex-start;
+}
+
+#title > section > .overlay > div:last-child {
+  z-index: 2;
+  display: flex;
+  justify-content: center; align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 0;
+  overflow: hidden;
+  transition: 1.5s;
+  /* background-color: pink; */
+}
+    #title > section.active > .overlay > div:last-child {
+      height: 50dvh;
+    }
+
+#title > section > .overlay > div:first-child > h3 {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  font-family: "Wallpoet", sans-serif;
+  font-size: clamp(40px, 10vw, 75px);
+  color: var(--green);
+  text-shadow: 0 0 3px #fff;
+  letter-spacing: 5px;
+}
+
+#title > section > .overlay > div:first-child > h3::before, 
+#title > section > .overlay > div:first-child > h3::after {
+  content: '';
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 0%; 
+  height: 50%;
+  border: 1px solid var(--green);
+  background-color: var(--green);
+  box-shadow: 0 0 3px #fff;
+  transition: 1.5s; transition-delay: 1.5s;
+}
+    #title > section.active > .overlay > div:first-child > h3::before, 
+    #title > section.active > .overlay > div:first-child > h3::after {
+      width: 75%;
+    }
+
+#title > section > .overlay > div:first-child > h2 {
+  position: relative;
+  top: -100%; 
+  font-family: "Tourney", sans-serif;
+  font-weight: 500;
+  font-size: clamp(50px, 10vw, 120px);
+  transition: 1.5s;
+}
+    #title > section.active > .overlay > div:first-child > h2 {
+      top: 0%;
+    }
+
+#title > section > .overlay > div:first-child > h2::before {
+  content: attr(data-content);
+  position: absolute;
+  color: transparent;
+  font-weight: 100;
+  -webkit-text-stroke: 1px #fff;
+  z-index: 2;
+}
+
+#title > section > .overlay > div:last-child > p {
+  position: relative;
+  z-index: 2;
+  padding: 40px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--green);
+  background-image: linear-gradient(45deg, var(--bgc-primary) 50%, var(--bgc-secondary) 50%);
+  font-size: clamp(16px, 4vw, 30px);
+  color: var(--green);
+  box-shadow: 0 0 5px #fff;
+  text-align: justify;
+}
+
+#title > section > .overlay > div:last-child > p::before {
+  content: '???';
+  position: absolute;
+  top: 0; left: 10px;
+  transform: translateY(-50%);
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--green);
+  font-family: "Tourney", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+#title > section > .overlay > div:last-child > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+#title > section > .overlay > div:last-child > div > span {
+  display: inline-block;
+  background-color: var(--bgc-secondary);
+  border: 1px solid var(--green);
+  padding: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#title > section > .background {
+  width: 100vw;
+  height: 100vh;
+  background-image: var(--img);
+  background-size: cover;
+  background-position: center;
+}
+
+#title > section > .background::before, 
+#title > section > .background::after {
+  content: '';
+  position: absolute;
+  width: 0%; height: 100%;
+  transition: 1.5s;
+}
+    #title > section.active > .background::before, 
+    #title > section.active > .background::after {
+      width: 100%;
+    }
+
+#title > section > .background::before {
+  filter: grayscale(100%);
+  background-image: var(--img);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#title > section > .background::after {
+  border-right: 3px solid var(--green);
+  box-shadow: 0 0 10px #fff;
+}
+
+/* section */

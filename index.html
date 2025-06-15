@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Rifqi | 187006057</title>
+  <link rel="icon" sizes="128x128" href="assets/unsil.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.properties.css"/>
+  <link rel="stylesheet" href="index.media.query.css"/>
+  <link rel="stylesheet" href="index.css"/>
+  <link rel="stylesheet" href="css/title.css"/>
+  <link rel="stylesheet" href="css/overlay.css"/>
+  <link rel="stylesheet" href="css/navigation.css"/>
+  <script defer src="index.js"></script>
+</head>
+<body>
+  <main>
+    <header id="title">
+      <section data-index="1" class="active">
+        <div class="background" style="--img: url('/assets/jpg/bg-1.jpg')"></div>
+        <div class="overlay">
+          <div>
+            <h3>01</h3>
+            <h2 data-content="Pendahuluan">Pendahuluan</h2>
+          </div>
+          <div>
+            <p>Pembuatan sebuah <i>PCAP Analyzer</i> bisa lebih mudah dengan hanya melatih sebuah model <i>Machine Learning</i> untuk melakukan analisis.</p>
+            <div>
+              <span data-index="1a" class="modal-open">A</span>
+              <span data-index="1b" class="modal-open">B</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-index="2">
+        <div class="background" style="--img: url('/assets/jpg/bg-2.jpg')"></div>
+        <div class="overlay">
+          <div>
+            <h3>02</h3>
+            <h2 data-content="Preprocessing">Preprocessing</h2>
+          </div>
+          <div>
+            <p>Dataset <i>CICIDS-2018</i> perlu dipersiapkan sebelum diberikan ke model yang akan dilatih.</p>
+            <div>
+              <span data-index="2a" class="modal-open">A</span>
+              <span data-index="2b" class="modal-open">B</span>
+              <span data-index="2c" class="modal-open">C</span>
+              <span data-index="2d" class="modal-open">D</span>
+              <span data-index="2e" class="modal-open">E</span>
+              <span data-index="2f" class="modal-open">F</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-index="3">
+        <div class="background" style="--img: url('/assets/jpg/bg-3.jpg')"></div>
+        <div class="overlay">
+          <div>
+            <h3>03</h3>
+            <h2 data-content="Training">Training</h2>
+          </div>
+          <div>
+            <p>Model perlu dilatih dan dievaluasi sebelum di-deploy.</p>
+            <div>
+              <span data-index="3a" class="modal-open">A</span>
+              <span data-index="3b" class="modal-open">B</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-index="4">
+        <div class="background" style="--img: url('/assets/jpg/bg-4.jpg')"></div>
+        <div class="overlay">
+          <div>
+            <h3>04</h3>
+            <h2 data-content="Deploy">Deploy</h2>
+          </div>
+          <div>
+            <p>Model yang telah dilatih siap untuk di-deploy menjadi aplikasi REST API.</p>
+            <div>
+              <span data-index="4a" class="modal-open">A</span>
+              <span data-index="4b" class="modal-open">B</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <img src="/assets/png/robot.png"/>
+    </header>
+  </main>
+  <nav id="navigation">
+    <span data-index="1" class="active"></span>
+    <span data-index="2"></span>
+    <span data-index="3"></span>
+    <span data-index="4"></span>
+  </nav>
+  <div id="overlay">
+    <article data-index="1a">
+      <header>
+        <h4>Penelitian Terkait</h4>
+      </header>
+      <div class="content">
+        <div>
+          <h5><span>01</span> | Ahmad dkk.</h5>
+          <p>Membuat sistem bernama Anomaly Detection-IoT yang dapat mendeteksi anomali dengan algoritma <span class="blue">Random Forest</span>.</p>
+        </div>
+        <div>
+          <h5><span>02</span> | Saharkhizan dkk.</h5>
+          <p>Melatih model dengan algoritma <span class="blue">Decision Tree</span> dan dataset Modbus.</p>
+        </div>
+        <div>
+          <h5><span>03</span> | Bagaa dkk.</h5>
+          <p>Menetapkan sebuah framework dalam melatih sebuah model yang dilatih dengan algoritma <span class="blue">SVM</span>.</p>
+        </div>
+      </div>
+      <footer>
+        <span data-index="1a" class="modal-close">Tutup</span>
+      </footer>
+    </article>
+    <article data-index="1b">
+      <header>
+        <h4>Tujuan</h4>
+      </header>
+      <div class="content">
+        <div data-a="01">
+          <p>Mendapatkan variabel-variabel pilihan hanya dengan analisa distribusi.</p>
+        </div>
+        <div data-a="02">
+          <p>Deploy model yang sudah dilatih ke aplikasi web (REST API).</p>
+        </div>
+      </div>
+      <footer>
+        <span data-index="1b" class="modal-close">Tutup</span>
+      </footer>
+    </article>
+    <article data-index="2a">
+      <header>
+        <h4>E/ Multicollinearity</h4>
+      </header>
+      <div class="content">
+        <img src="/assets/png/data/matrix-correlation.png"/>
+        <p>Pada penelitian ini, pasangan variabel yang memiliki nilai Pearson's correlation coefficient lebih atau sama dengan <span class="yellow">0.9</span> dilabeli sebagai multicollinear.</p>
+      </div>
+      <footer>
+        <span data-index="2a" class="modal-close">Tutup</span>
+      </footer>
+    </article>
+    <article data-index="2b">
+      <header>
+        <h4>D/ 3 Variabel</h4>
+      </header>
+      <div class="content">
+        <img src="/assets/png/data/3vars.png"/>
+        <p>Variabel <span class="blue">Bwd IAT Min</span>, <span class="blue">Pkt Len Min</span> dan <span class="blue">Fwd Pkts/s</span> menunjukkan potensi dalam mendukung model dalam proses klasifikasi data paket.</p>
+      </div>
+      <footer>
+        <span data-index="2b" class="modal-close">Tutup</span>
+      </footer>
+    </article>
+    <article data-index="2c">
+      <header>
+        <h4>E/ Identikal</h4>
+      </header>
+      <div class="content">
+        <img src="/assets/png/data/identikal.png"/>
+        <p>Terdapat enam variabel yang memiliki pola distribusi yang serupa, yaitu <span class="blue">Fwd PSH Flags</span>, <span class="blue">FIN Flag Cnt</span>, <span class="blue">SYN Flag Cnt</span>, <span class="blue">RST Flag Cnt</span>, <span class="blue">URG Flag Cnt</span> dan <span class="blue">ECE Flag Cnt</span>.</p>
+        <p>Perbandingan <span class="blue">Fwd PSH Flags</span> terhadap <span class="yellow">5</span> dari <span class="yellow">6</span> variabel tersebut memiliki kemiripan masing-masing lebih dari <span class="yellow">80%</span>.</p>
+      </div>
+      <footer>
+        <span data-index="2c" class="modal-close">Tutup</span>
+      </footer>
+    </article>
+    <article data-index="2d">
+      <header>
+        <h4>D/ Fwd PSH Flags</h4>
+      </header>
+      <div class="content">
+        <img src="/assets//png/data/fwd-psh-flags.png"/>
+        <p>Variabel <span class="blue">Fwd PSH Flags</span> tidak memiliki nilai <span class="yellow">1</span> pada semua data yang dilabeli <span class="red">Brute-force</span>, dengan kata lain variabel ini dapat membantu model dalam melakukan klasifikasi.</p>
+      </div>
+      <footer>
+        <span data-index="2d" class="modal-close">Tutup</span>
+      </footer>
+    </article>
+    <article data-index="2e">
+      <header>
+        <h4>D/ Protocol</h4>
+      </header>
+      <div class="content">
+        <img src="/assets//png/data/protocol.png"/>
+        <p>Paket dengan label <span class="red">Brute-force</span> dan <span class="red">DoS</span> hanya menggunakan protokol nomor <span class="yellow">6</span> (TCP). Oleh karena itu, seluruh paket dengan protokol nomor <span class="yellow">0</span> dan <span class="yellow">17</span> dikategorikan sebagai <span class="red">Benign</span>.</p>
+      </div>
+      <footer>
+        <span data-index="2e" class="modal-close">Tutup</span>
+      </footer>
+    </article>
+    <article data-index="2f">
+      <header>
+        <h4>D/ Port</h4>
+      </header>
+      <div class="content">
+        <img src="/assets/png/data/port.png"/>
+        <p>data dengan label <span class="red">DoS</span> hanya memiliki nilai <span class="yellow">80</span> pada variabel <span class="blue">Dst Port</span>, sementara data dengan label <span class="red">Brute-force</span> hanya memiliki nilai <span class="yellow">21</span> atau <span class="yellow">22</span>.</p>
+      </div>
+      <footer>
+        <span data-index="2f" class="modal-close">Tutup</span>
+      </footer>
+    </article>
+    <article data-index="3a">
+      <header>
+        <h4>Ev/ Training</h4>
+      </header>
+      <div class="content">
+        <div>
+          <h5><span>01</span> Random Forest</h5>
+          <p>Akurasi: <span class="yellow">99.30%</span></p>
+          <p><span>Macro avg</span> | Precision: <span class="yellow">96.21%</span>, Recall: <span class="yellow">93.88%</span>, F1: <span class="yellow">94.99%</span></p>
+        </div>
+        <div>
+          <h5><span>02</span> Gradient Boosting</h5>
+          <p>Akurasi: <span class="yellow">99.33%</span></p>
+          <p><span>Macro avg</span> | Precision: <span class="yellow">96.44%</span>, Recall: <span class="yellow">94.12%</span>, F1: <span class="yellow">94.23%</span></p>
+        </div>
+        <div>
+          <h5><span>03</span> AdaBoost</h5>
+          <p>Akurasi: <span class="yellow">97.43%</span></p>
+          <p><span>Macro avg</span> | Precision: <span class="yellow">65.56%</span>, Recall: <span class="yellow">66.65%</span>, F1: <span class="yellow">66.10%</span></p>
+        </div>
+      </div>
+      <footer>
+        <span data-index="3a" class="modal-close">Tutup</span>
+      </footer>
+    </article>
+    <article data-index="3b">
+      <header>
+        <h4>Ev/ Validating</h4>
+      </header>
+      <div class="content">
+        <div>
+          <h5><span>01</span> Random Forest</h5>
+          <p>Akurasi: <span class="yellow">99.76%</span></p>
+          <p><span>Macro avg</span> | Precision: <span class="yellow">98.22%</span>, Recall: <span class="yellow">98.55%</span>, F1: <span class="yellow">98.39%</span></p>
+        </div>
+        <div>
+          <h5><span>02</span> Gradient Boosting</h5>
+          <p>Akurasi: <span class="yellow">99.55%</span></p>
+          <p><span>Macro avg</span> | Precision: <span class="yellow">97.09%</span>, Recall: <span class="yellow">96.74%</span>, F1: <span class="yellow">96.92%</span></p>
+        </div>
+        <div>
+          <h5><span>03</span> AdaBoost</h5>
+          <p>Akurasi: <span class="yellow">97.46%</span></p>
+          <p><span>Macro avg</span> | Precision: <span class="yellow">65.58%</span>, Recall: <span class="yellow">66.65%</span>, F1: <span class="yellow">66.11%</span></p>
+        </div>
+      </div>
+      <footer>
+        <span data-index="3b" class="modal-close">Tutup</span>
+      </footer>
+    </article>
+    <article data-index="4a">
+      <header>
+        <h4>CICFlowMeter-V3</h4>
+      </header>
+      <div class="content">
+        <code>
+        class CICFlowMeterRunner(IScriptRunner):<br/>
+        &emsp;# ... <br/>
+        &emsp;IS_ON_WINDOWS=system()=='Windows' <br/>
+
+        &emsp;def __init__(self, cicflowmeter_path:str): <br/>
+        &emsp;&emsp;self.cicflowmeter_script_path:str=str(Path(cicflowmeter_path).joinpath('bin', 'CICFLowMeter.bat' if CICFlowMeterRunner.IS_ON_WINDOWS else 'CICFlowMeter')) <br/>
+          
+        &emsp;def run(self, cwd:str)->None: <br/>
+        &emsp;&emsp;&emsp;result:CompletedProcess=subprocess_run( <br/>
+        &emsp;&emsp;&emsp;&emsp;[self.cicflowmeter_script_path], <br/>
+        &emsp;&emsp;&emsp;&emsp;cwd=cwd, <br/>
+        &emsp;&emsp;&emsp;&emsp;capture_output=True, <br/>
+        &emsp;&emsp;&emsp;&emsp;text=True, <br/>
+        &emsp;&emsp;&emsp;&emsp;shell=CICFlowMeterRunner.IS_ON_WINDOWS <br/>
+        &emsp;&emsp;&emsp;)
+          
+        &emsp;# ...
+        </code>
+        <p>CICFlowMeter-V3 adalah sebuah aplikasi berbasis terminal, python perlu memanggil aplikasi tersebut untuk mengkonversi PCAP ke CSV.</p>
+      </div>
+      <footer>
+        <span data-index="4a" class="modal-close">Tutup</span>
+      </footer>
+    </article>
+    <article data-index="4b">
+      <header>
+        <h4>Preprocessor</h4>
+      </header>
+      <div class="content">
+        <p>Untuk preprocessor sebenarnya hanya melakukan tahap-tahap preprocessing yang telah dilakukan, yaitu:</p>
+        <ol>
+          <li>Feature Selection</li>
+          <li>Log Transformation</li>
+          <li>Membuat variabel dari <span class="blue">Protocol</span></li>
+          <li>One-Hot Encoding</li>
+        </ol>
+      </div>
+      <footer>
+        <span data-index="4a" class="modal-close">Tutup</span>
+      </footer>
+    </article>
+    <article data-index="xx">
+      <header>
+        <h4>Masalah & Tujuan</h4>
+      </header>
+      <div class="content">
+      </div>
+      <footer>
+        <span data-index="1a" class="modal-close">Tutup</span>
+      </footer>
+    </article>
+  </div>
+</body>
+</html>
